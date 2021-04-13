@@ -1,0 +1,630 @@
+/* troila-dialog troila-confirm */
+.troila-dialog .el-dialog__headerbtn:hover .el-dialog__close,
+.troila-confirm .el-message-box__headerbtn:hover .el-message-box__close {
+  color: #3c71fd;
+}
+
+.troila-confirm .el-message-box__message > p .light {
+  color: #3c71fd;
+}
+.troila-dialog .dialog-footer .el-button--default:not(.is-disabled) {
+  background-color: transparent;
+}
+.troila-dialog .dialog-footer .el-button--default:not(.is-disabled):hover,
+.troila-dialog .dialog-footer .el-button--default:not(.is-disabled):focus:hover,
+.troila-confirm
+  .el-message-box__btns
+  .el-button--default:not(.el-button--primary):not(.is-disabled):hover,
+.troila-confirm
+  .el-message-box__btns
+  .el-button--default:not(.el-button--primary):not(.is-disabled):focus:hover {
+  background-color: #f2f6ff;
+}
+
+.troila-dialog .dialog-footer .el-button--default:not(.is-disabled),
+.troila-confirm .el-message-box__btns .el-button--default:not(.is-disabled) {
+  color: #3c71fd;
+}
+
+.troila-dialog .dialog-footer .el-button:not(.is-disabled),
+.troila-confirm .el-message-box__btns .el-button:not(.is-disabled) {
+  border-color: #5684fe;
+}
+
+.troila-dialog .dialog-footer .el-button--primary:not(.is-disabled),
+.troila-confirm .el-message-box__btns .el-button--primary:not(.is-disabled) {
+  background-color: #5684fe;
+}
+
+.troila-confirm .el-message-box__btns .el-button--primary:not(.is-disabled) {
+  color: #fff;
+  border-color: #5684fe;
+}
+
+.troila-dialog .dialog-footer .el-button--primary:not(.is-disabled):hover,
+.troila-confirm
+  .el-message-box__btns
+  .el-button--primary:not(.is-disabled):hover {
+  background-color: #3c71fd;
+  border-color: #3c71fd;
+}
+
+/* .troila-dialog .el-button.is-disabled,
+.troila-dialog .el-button.is-disabled:hover {
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #fff;
+  border-color: #ebeef5;
+} */
+
+.troila-dialog .dialog-footer .el-button--primary:not(.is-disabled):hover,
+.troila-confirm
+  .el-message-box__btns
+  .el-button--primary:not(.is-disabled):hover {
+  background-color: #508aff;
+  border-color: #508aff;
+}
+
+/* troila-form troila-group */
+
+.troila-form .el-button {
+  border-color: #5684fe;
+}
+
+.troila-form .el-button--default {
+  color: #5684fe;
+}
+.troila-form .el-button.el-button--default:focus {
+  background-color: #fff;
+}
+
+.troila-form .el-button--default:hover,
+.troila-form .el-button--default:focus:hover {
+  background-color: #f2f6ff;
+  border-color: #3c71fd;
+  color: #3c71fd;
+}
+
+.troila-form button:hover svg:not(.headerIcon) {
+  fill: #3c71fd;
+}
+
+.troila-form .el-button--primary {
+  background-color: #5684fe;
+  border-color: #5684fe;
+}
+
+.troila-form .el-button--primary:not(.is-disabled):hover {
+  background-color: #3c71fd;
+  border-color: #3c71fd;
+}
+
+.troila-form .el-form-item__label,
+.troila-form .el-input__inner {
+  color: #34495e;
+}
+
+.troila-form .el-input.is-active .el-input__inner,
+.troila-form .el-input__inner:focus,
+.troila-form .el-textarea__inner:focus,
+.troila-form .el-select .el-input.is-focus .el-input__inner,
+.troila-form .el-range-editor.is-active,
+.troila-form .el-range-editor.is-active:hover {
+  border-color: #5684fe;
+}
+
+.troila-group .el-button.active {
+  /* background-color: #5684fe;
+  border-color: #5684fe;
+  color: #fff; */
+  background-color: #f2f6ff;
+  border-color: #3c71fd;
+  color: #3c71fd;
+  z-index: 2;
+}
+.troila-group .el-button:focus {
+  background-color: #fff;
+  border-color: #dcdfe6;
+  color: #606266;
+}
+
+.troila-group .el-button:hover {
+  background-color: transparent;
+  border-color: #c0c4cc;
+  color: #606266;
+}
+
+/* .troila-group .el-button:hover,
+.troila-group .el-dropdown:hover {
+  z-index: 3;
+} */
+
+.troila-group .el-button.active {
+  /* background-color: #5684fe;
+  border-color: #5684fe;
+  color: #fff; */
+  background-color: #f2f6ff;
+  border-color: #3c71fd;
+  color: #3c71fd;
+  z-index: 2;
+}
+
+/* .troila-group .el-button.active:hover {
+  background-color: #3c71fd;
+} */
+
+.troila-group .el-button-group > .el-dropdown > .el-button {
+  border-left-color: #dcdfe6;
+}
+
+.troila-group .el-button-group > .el-dropdown > .el-button:hover {
+  border-color: #c0c4cc;
+}
+
+.troila-group .el-button-group > .el-dropdown.active > .el-button {
+  /* background-color: #5684fe;
+  border-color: #5684fe;
+  color: #fff; */
+  background-color: #f2f6ff;
+  border-color: #3c71fd;
+  color: #3c71fd;
+  z-index: 2;
+}
+.troila-btnGroup-popper .el-dropdown-menu__item {
+  color: #34495e;
+}
+.troila-btnGroup-popper .el-dropdown-menu__item.active {
+  color: #3c71fd;
+}
+
+/* troila-table */
+
+.troila-table thead tr th {
+  border-top: 1px solid #dce5fe;
+  border-bottom: 1px solid #dce5fe !important;
+}
+
+.troila-table th,
+.troila-table td {
+  color: #303234;
+}
+.troila-table.el-table .ascending .sort-caret.ascending {
+  border-bottom-color: #5684fe;
+}
+
+.troila-table.el-table .descending .sort-caret.descending {
+  border-top-color: #5684fe;
+}
+
+.troila-form .el-radio__input.is-checked:not(.is-disabled) .el-radio__inner,
+.troila-table .el-radio__input.is-checked:not(.is-disabled) .el-radio__inner {
+  /* background-color: #5684fe;
+  border-color: #5684fe; */
+  background-color: #fff;
+  border-color: #5684fe;
+}
+.troila-form
+  .el-radio__input.is-checked:not(.is-disabled)
+  .el-radio__inner::after {
+  background-color: #5684fe;
+  width: 6px;
+  height: 6px;
+}
+
+.troila-form .el-radio__input.is-checked:not(.is-disabled) + .el-radio__label,
+.troila-table .el-radio__input.is-checked:not(.is-disabled) + .el-radio__label {
+  color: #5684fe;
+}
+
+.troila-form .el-checkbox__inner,
+.troila-form .el-checkbox__input.is-focus .el-checkbox__inner,
+.troila-table .el-checkbox__inner,
+.troila-table .el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: #dcdfe6;
+}
+
+.troila-form
+  .el-radio:not(.is-checked):hover
+  .el-radio__input:not(.is-disabled)
+  .el-radio__inner,
+.troila-form .el-radio__input:not(.is-disabled) .el-radio__inner:hover,
+.troila-form .el-checkbox__inner:hover,
+.troila-form .el-checkbox:not(.is-checked):hover .el-checkbox__inner,
+.troila-form
+  .el-checkbox__input.is-focus:not(.is-checked)
+  .el-checkbox__inner:hover,
+.troila-table .el-radio__input:not(.is-disabled) .el-radio__inner:hover,
+.troila-table .el-checkbox__inner:hover,
+.troila-table
+  .el-checkbox__input.is-focus:not(.is-checked)
+  .el-checkbox__inner:hover {
+  border-color: #c0c4cc;
+}
+
+.troila-form .is-error .el-radio__inner {
+  border-color: #f56c6c;
+}
+
+.troila-form .el-checkbox__input.is-checked .el-checkbox__inner,
+.troila-form .el-checkbox__input.is-indeterminate .el-checkbox__inner,
+.troila-table .el-checkbox__input.is-checked .el-checkbox__inner,
+.troila-table .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #5684fe;
+  border-color: #5684fe;
+}
+
+.troila-table
+  .el-checkbox__input:not(.is-disabled).is-checked
+  .el-checkbox__inner,
+.troila-table .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #fff;
+  border-color: #5684fe;
+  color: #5684fe;
+}
+
+.troila-table
+  .el-checkbox__input:not(.is-disabled).is-indeterminate
+  .el-checkbox__inner::before {
+  background-color: #fff;
+}
+
+.troila-table
+  .el-checkbox__input:not(.is-disabled).is-checked
+  .el-checkbox__inner::after {
+  border-color: #fff;
+}
+
+.troila-form .el-checkbox__input.is-checked + .el-checkbox__label,
+.troila-table .el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #5684fe;
+}
+
+.troila-form .el-checkbox__input.is-disabled .el-checkbox__inner,
+.troila-table .el-checkbox__input.is-disabled .el-checkbox__inner {
+  background-color: #edf1fc;
+  border-color: #dcdfe6;
+}
+
+.troila-table .el-table__body tr.hover-row.current-row > td,
+.troila-table
+  .el-table__body
+  tr.hover-row.el-table__row--striped.current-row
+  > td,
+.troila-table .el-table__body tr.hover-row.el-table__row--striped > td,
+.troila-table .el-table__body tr.hover-row > td {
+  background-color: #f9fafd;
+}
+.troila-form .el-button--text:not(.is-disabled),
+.troila-table .el-button--text:not(.is-disabled) {
+  color: #5684fe;
+}
+.box-card {
+  color: #34495e;
+}
+.box-card .operation button.el-button--text:not(.is-disabled) {
+  color: #3c71fd;
+}
+.box-card .operation button.el-button--text:not(.is-disabled):hover {
+  color: #3c71fd;
+  opacity: 0.85;
+}
+.box-card.active {
+  border-color: #5684fe;
+}
+.box-card::before {
+  border-top-color: #5684fe !important;
+}
+.moreBox::before {
+  background-color: #364791;
+}
+.orangeTheme .moreBox::before,
+.purpleTheme .moreBox::before {
+  background-color: #8798e2;
+}
+.moreBox > div:hover {
+  background-color: #5684fe !important;
+}
+/* troila-popper */
+
+.troila-popper .el-select-dropdown__item.selected,
+.troila-popper.el-select-dropdown.is-multiple
+  .el-select-dropdown__item.selected {
+  color: #3c71fd;
+}
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: #f9fafd;
+}
+.troila-popper .el-dropdown-menu__item:not(.active):focus {
+  color: #606266;
+}
+.troila-popper .el-dropdown-menu__item:focus {
+  background-color: transparent;
+}
+
+.troila-popper .el-dropdown-menu__item:not(.is-disabled):not(.active):hover {
+  color: #606266;
+}
+.troila-popper .el-dropdown-menu__item:not(.is-disabled):hover {
+  background-color: #f9fafd;
+}
+
+.troila-popper .el-date-table td.today span {
+  color: #5684fe;
+}
+
+.troila-popper .el-date-table td.available:not(.disabled):hover,
+.troila-popper .el-date-picker__header-label.active,
+.troila-popper .el-date-picker__header-label:hover,
+.troila-popper .el-year-table td:not(.disabled) .cell:hover,
+.troila-popper .el-year-table td.current:not(.disabled) .cell,
+.troila-popper .el-month-table td:not(.disabled) .cell:hover {
+  color: #5684fe;
+}
+
+.troila-popper .el-date-table td.today.end-date span,
+.troila-popper .el-date-table td.today.start-date span {
+  color: #ffffff;
+}
+
+.troila-popper .el-date-table td.in-range div,
+.troila-popper .el-date-table td.in-range div:hover,
+.troila-popper .el-date-table.is-week-mode .el-date-table__row.current div,
+.troila-popper .el-date-table.is-week-mode .el-date-table__row:hover div {
+  background-color: #f2f6ff;
+}
+
+.troila-popper .el-date-table td.end-date span,
+.troila-popper .el-date-table td.start-date span,
+.troila-popper .el-date-table td.current:not(.disabled) span {
+  background-color: #5684fe;
+}
+.troila-popper .el-date-table td.today.current:not(.disabled) span {
+  color: #fff;
+}
+
+.troila-popper .troila-choose {
+  color: #3c71fd;
+}
+
+.troila-popper.el-popper[x-placement^="bottom"] .popper__arrow {
+  border-bottom-color: #e4e7ed;
+}
+
+/* troila-transfer */
+
+.troila-transfer .el-input__inner:focus {
+  border-color: #5684fe;
+}
+
+.troila-dialog
+  .troila-transfer
+  .el-button.el-transfer__button:not(.is-disabled) {
+  background-color: #5684fe;
+  border-color: #5684fe;
+}
+
+.troila-dialog
+  .troila-transfer
+  .el-button.el-transfer__button:not(.is-disabled):hover {
+  background-color: #3c71fd;
+  border-color: #3c71fd;
+}
+
+.troila-transfer .el-transfer-panel__item:hover {
+  color: #606266;
+}
+
+.troila-transfer
+  .el-transfer-panel__body
+  .el-checkbox__input.is-checked
+  + .el-checkbox__label {
+  color: #5684fe;
+}
+
+.troila-transfer .el-checkbox__inner,
+.troila-transfer .is-focus .el-checkbox__inner {
+  border-color: #dcdfe6;
+  border-radius: 2px;
+}
+
+.troila-transfer .el-checkbox:hover .el-checkbox__inner,
+.troila-transfer .el-checkbox__inner:hover {
+  border-color: #c0c4cc;
+}
+
+.troila-transfer .el-checkbox__input.is-checked .el-checkbox__inner,
+.troila-transfer .el-checkbox__input.is-indeterminate .el-checkbox__inner,
+.troila-transfer
+  .el-transfer-panel__item:hover
+  .el-checkbox__input.is-checked
+  .el-checkbox__inner,
+.troila-transfer
+  .el-transfer-panel__item:hover
+  .el-checkbox__input.is-indeterminate
+  .el-checkbox__inner {
+  /* background-color: transparent; */
+  background-color: #5684fe;
+  border-color: #5684fe;
+}
+
+.el-loading-spinner .path {
+  stroke: #3c71fd;
+}
+
+/* el-pagination */
+.troila-page1.el-pagination .el-pager li,
+.troila-page1.el-pagination .el-pager button {
+  transition: all 0.15s ease;
+}
+.troila-page1.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #5684fe;
+}
+.troila-page1.el-pagination.is-background
+  .el-pager
+  li:not(.disabled):not(.active):hover,
+.troila-page1.el-pagination.is-background
+  button:not(:disabled):not(.active):hover {
+  color: #5684fe;
+}
+
+.troila-page1.el-pagination:not(.is-background)
+  .el-pager
+  li:not(.disabled).active {
+  /* color: #3c71fd; */
+  color: #000000;
+  position: relative;
+  z-index: 1;
+}
+.troila-page1.el-pagination:not(.is-background)
+  .el-pager
+  li:not(.disabled).active::before {
+  /* color: #3c71fd; */
+  background-color: #dce5fe;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -12px 0 0 -12px;
+  z-index: -1;
+}
+.troila-page1.el-pagination:not(.is-background)
+  .el-pager
+  li:not(.disabled):not(.active):hover,
+.troila-page1.el-pagination:not(.is-background)
+  button:not(:disabled):not(.active):hover {
+  color: #5684fe;
+}
+
+/* el-tabs */
+.this-tabs .el-tabs__item {
+  color: #34495e;
+}
+.this-tabs .el-tabs__item:hover,
+.this-tabs .el-tabs__item.is-active {
+  color: #5684fe;
+}
+.this-tabs .el-tabs__active-bar {
+  background-color: #5684fe;
+}
+.this-tabs .el-tabs__item svg {
+  fill: #34495e;
+}
+.this-tabs .el-tabs__item:hover svg,
+.this-tabs .el-tabs__item.is-active svg {
+  fill: #5684fe;
+}
+.this-tabs .el-tabs__content {
+  padding: 10px;
+  margin: -10px;
+}
+.this-tabs .el-collapse-item__header,
+.this-tabs .el-collapse-item__header.focusing:focus:not(:hover) {
+  color: #34495e;
+}
+/* main */
+i.title-font {
+  color: #6881eb;
+}
+i.title-font::before {
+  background: #5684fe;
+}
+.topProgress {
+  background: #5684fe;
+}
+.subMenu-title {
+  color: #34495e;
+}
+.barSmall .subMenu {
+  color: #34495e;
+}
+.barSmall li.subMenu-item {
+  color: #303234;
+}
+.elHeader {
+  color: #34495e;
+}
+.right-login-info {
+  color: #34495e;
+}
+.right-login-info .el-dropdown {
+  color: #34495e;
+}
+.troila-popper.colorBox .el-dropdown-menu__item:not(.is-disabled):hover,
+.troila-popper.colorBox .el-dropdown-menu__item:not(.is-disabled).active {
+  color: #3c71fd;
+}
+.breadcrumbBox {
+  color: #34495e;
+}
+.breadcrumbBox span.text:last-child {
+  color: #5684fe;
+}
+.leftBorder.borderActive {
+  background: #0076ff !important;
+}
+.logo + span {
+  color: #ffffff;
+}
+.menus .menuList {
+  color: #ffffff;
+  background-color: transparent;
+}
+.menus .menuList .menuBox {
+  background: transparent;
+}
+/* .menus .menuList.open .menuBox {
+  background-color: rgba(245, 245, 247, 0.6);
+} */
+/* .menus .menuList .menuBox:hover {
+  background-color: rgba(59, 79, 128, 0.05);
+} */
+.menus .menuList.active .menuBox {
+  /* background-color: #3b4e80; */
+  background: linear-gradient(
+    270deg,
+    rgba(14, 122, 245, 0.8) 0%,
+    rgba(86, 132, 254, 0.8) 100%
+  );
+}
+/* li.subMenu-item:not(.hasChild):hover, */
+.nameBox:hover,
+.iconleft:hover {
+  background-color: rgba(59, 79, 128, 0.05);
+}
+li.subMenu-item > .active {
+  background-color: rgba(245, 245, 247, 0.6);
+}
+li.subMenu-item.subactive {
+  background-color: #3b4e80 !important;
+  color: #fff;
+}
+/* .menus .menuList.open .subMenu {
+  background-color: rgba(245, 245, 247, 0.6);
+} */
+/* .menus .menuList.open.active .subMenu {
+  background-color: rgba(54, 71, 145, 0.2);
+} */
+/* .barSmall li.subMenu-item > .active,
+.barSmall li.subMenu-item.subactive,
+.barSmall .menus .menuList.open .subMenu {
+  background-color: #fff !important;
+} */
+/* .barSmall li.subMenu-item:not(.hasChild):hover {
+  color: #5684fe;
+} */
+/* .barSmall li.subMenu-item.subactive,
+.barSmall li.subMenu-item > .active,
+.barSmall .menus .menuList .subMenu.open,
+.barSmall .open.subMenu-item .el-icon-arrow-down {
+  color: #3c71fd;
+  background-color: #fff !important;
+}
+.this-tabs .el-tabs__active-bar {
+  background-color: #5684fe;
+} */

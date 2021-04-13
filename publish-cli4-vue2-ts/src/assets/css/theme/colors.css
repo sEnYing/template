@@ -1,0 +1,41 @@
+body {
+  --mainColor: transparent;
+  --themeColor: transparent;
+  --titleColor: transparent;
+  --textColor: transparent;
+  --hoverColor: #f2f6ff;
+  --tableColor: #f1f4fb;
+  --tableHColor: transparent;
+  --sibarColor2: transparent;
+  --sibarColor3: transparent;
+  --sibarColor56: transparent;
+  --sibarColor561: transparent;
+  --asideBox: transparent;
+  --menuSpread: transparent;
+  --menuSpreadH: transparent;
+  --borderActive: transparent;
+  /* 统一 */
+  --success: #22a658;
+  --fail: #ff3769;
+}
+
+body.defaultTheme {
+  --mainColor: #3d7eff;
+  --themeColor: #3575f5;
+  --mainhoverColor: #508aff;
+  --titleColor: #6881eb;
+  --textColor: #34495e;
+  --hoverColor: #f2f6ff;
+  --tableColor: #f1f6ff;
+  --tableHColor: #f9fafd;
+  --tableTextColor: #868686;
+  --sibarColor2: rgba(54, 71, 145, 0.2);
+  --sibarColor3: rgba(245, 245, 247, 0.6);
+  --sibarColor56: rgba(245, 245, 247, 0.6);
+  /* --sibarColor561: rgba(42, 58, 129, 0.56); */
+  --sibarColor561: rgba(245, 245, 247, 1);
+  --asideBox: #364791;
+  --menuSpread: #8798e2;
+  --menuSpreadH: rgba(24, 29, 82, 0.2);
+  --borderActive: #0076ff;
+}

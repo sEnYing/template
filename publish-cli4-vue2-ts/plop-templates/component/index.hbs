@@ -1,0 +1,28 @@
+{{#if template}}
+<template>
+  <div>
+  </div>
+</template>
+{{/if}}
+
+{{#if script}}
+<script lang="ts">
+  import Vue from "vue";
+  export default Vue.extend({
+    name: '{{ properCase name }}',
+    props: {},
+    data() {
+      return {}
+    },
+    created() { },
+    mounted() { },
+    methods: {}
+  });
+</script>
+{{/if}}
+
+{{#if style}}
+<style lang="scss" scoped>
+
+</style>
+{{/if}}

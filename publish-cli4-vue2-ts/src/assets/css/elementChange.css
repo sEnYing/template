@@ -1,0 +1,984 @@
+/* dialog和messageBox 背景蒙版 */
+
+.v-modal {
+  background-color: #333333;
+  opacity: 0.3;
+}
+
+/* alert：$message-关闭按钮位置 */
+
+.troila-alert.el-message.is-closable .el-message__content {
+  padding-right: 32px;
+}
+
+.troila-alert {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.troila-alert>i:first-child {
+  padding-right: 8px;
+  font-size: 20px;
+}
+
+.troila-alert .el-message__closeBtn {
+  color: #a6aabb;
+  opacity: 0.75;
+  transition: opacity 0.15s;
+}
+
+.troila-alert .el-message__closeBtn:hover {
+  opacity: 1;
+}
+
+.troila-alert-success {
+  background-color: #dff0d8;
+  color: #4a874b;
+  border: 0;
+}
+
+.troila-alert-error {
+  background-color: #fee7e7;
+  color: #d13633;
+  border: 0;
+}
+
+/* messageBox $msgbox $confirm $message $prompt */
+
+.troila-confirm.el-message-box {
+  border-radius: 4px;
+  padding-bottom: 40px;
+  width: 470px;
+  box-sizing: border-box;
+}
+
+.troila-confirm .el-message-box__header {
+  padding: 12px 20px 0px;
+}
+
+.troila-confirm .el-message-box__headerbtn {
+  top: 14px;
+  right: 20px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.troila-confirm .el-message-box__headerbtn .el-message-box__close {
+  color: #303234;
+  font-size: 18px;
+}
+
+.troila-confirm .el-message-box__status {
+  color: #e73c3c;
+  /* top: 63px; */
+  /*  left: 138px; */
+  /* left: 24%; */
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  top: unset;
+  font-size: 22px !important;
+  transform: translateY(0);
+}
+
+.troila-confirm .el-message-box__status+.el-message-box__message {
+  /* padding-left: 166px; */
+  /* padding-left: 30%; */
+  padding-left: 8px;
+  font-size: 16px;
+  display: inline-block;
+  color: #303234;
+  vertical-align: top;
+  max-width: calc(100% - 80px);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.troila-confirm .el-message-box__title {
+  display: block;
+  font-size: 18px;
+  color: #303234;
+  border-bottom: 1px solid #eceff4;
+  text-align: left;
+  line-height: 24px;
+  padding: 0 4px 12px;
+}
+
+.troila-confirm .el-message-box__content {
+  padding: 52px 7px 30px;
+  color: #2a323a;
+  min-height: 80px;
+  /* min-height: 76px; */
+  text-align: center;
+}
+
+.troila-confirm .el-message-box__message>p>span {
+  padding: 0 6px;
+}
+
+.troila-confirm .el-message-box__message>p {
+  line-height: 22px;
+}
+
+.troila-confirm .el-message-box__message>p>div {
+  padding-top: 10px;
+}
+
+/* .troila-confirm .el-message-box__message > p::before {
+  content: "";
+  display: inline-block;
+  background: url("../images/tips-small.png") no-repeat center center/100% 100%;
+  width: 25px;
+  height: 25px;
+  vertical-align: top;
+  margin: -2px 8px -1px 0;
+} */
+
+.troila-confirm .el-button {
+  width: 80px;
+  height: 32px;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  display: inline-block;
+  /* float: right; */
+}
+
+.troila-confirm .el-message-box__btns {
+  text-align: center;
+  width: 198px;
+  margin: 0 auto;
+}
+
+.troila-confirm .el-message-box__btns::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.troila-confirm .el-message-box__btns>.el-button:nth-of-type(1) {
+  float: right;
+  margin: 0;
+  /* margin-right: 136px; */
+}
+
+.troila-confirm .el-message-box__btns>.el-button:nth-of-type(2) {
+  float: left;
+  margin: 0;
+}
+
+.troila-confirm .el-message-box__btns>.el-button:only-child {
+  float: none;
+  float: unset;
+  min-width: 120px;
+}
+
+/* .troila-confirm .el-message-box__btns button + button {
+  margin-left: 139px;
+} */
+
+/* .troila-confirm .el-message-box__btns button:nth-last-child(n + 2) {
+  margin-left: 24px;
+} */
+
+/* el-dialog */
+.el-dialog__wrapper {
+  width: 100%;
+  height: 100%;
+}
+.troila-dialog {
+  margin: 0 !important;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.troila-dialog .el-dialog {
+  border-radius: 4px;
+}
+
+.troila-dialog .el-input__inner {
+  width: 100%;
+}
+
+.troila-dialog .el-dialog__footer {
+  text-align: center;
+  padding: 30px 20px 40px;
+}
+
+.troila-dialog .el-dialog__body {
+  padding: 15px 16px 30px;
+  max-height: 700px;
+  overflow: auto;
+}
+.troila-dialog .el-dialog__body::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width : 10px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.troila-dialog .el-dialog__body::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ccc;
+}
+.troila-dialog .el-dialog__body::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #ededed;
+}
+
+.troila-dialog .el-dialog__footer button+button {
+  margin-left: 38px;
+}
+.troila-dialog .el-button--plain {
+  border-color:#4B67EE ;
+  color:#4B67EE
+}
+
+.troila-dialog .el-dialog__header {
+  padding: 14px 20px 0px;
+}
+
+.troila-dialog .el-dialog__headerbtn {
+  top: 16px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.troila-dialog .el-dialog__title {
+  display: block;
+  font-size: 18px;
+  color: #303234;
+  border-bottom: 1px solid #f4f7fd;
+  text-align: center;
+  padding: 0 4px 14px;
+}
+
+.troila-dialog.titleLeft-dialog .el-dialog__title {
+  text-align: left;
+}
+
+.troila-dialog .el-dialog__lefttitle {
+  display: block;
+  /* text-align: center; */
+  font-size: 18px;
+  color: #303234;
+  border-bottom: 1px solid #f4f7fd;
+  text-align: left;
+  padding: 0 4px 14px;
+}
+
+.troila-dialog .el-dialog__headerbtn .el-dialog__close {
+  color: #303234;
+  font-size: 18px;
+}
+
+.troila-dialog .el-dialog__wrapper .el-dialog {
+  width: 450px;
+}
+
+.troila-dialog .image {
+  background: url(../images/tips-big.png) no-repeat center center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.troila-dialog .detail {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+}
+
+.troila-dialog .time {
+  font-size: 12px;
+  padding-bottom: 10px;
+  color: #a6aabb;
+  display: block;
+  text-align: center;
+}
+
+.troila-dialog .small-image {
+  display: inline-block;
+  background: url(../images/tips-small.png) no-repeat center center;
+  width: 25px;
+  height: 25px;
+}
+
+.troila-dialog .desc {
+  vertical-align: super;
+}
+
+/* .troila-dialog .el-button {
+  border-radius: 20px;
+} */
+
+.troila-dialog .el-form-item__label {
+  width: 127px !important;
+  padding-right: 10px;
+}
+
+.troila-dialog .troila-form {
+  padding: 0 7px;
+  width: auto;
+  display: inline-block;
+}
+
+.troila-dialog .troila-form .el-form-item {
+  /* margin-bottom: 20px; */
+  padding-left: 0;
+}
+
+.troila-form.block-form .el-form-item {
+  display: block;
+  width: fit-content;
+}
+
+.troila-dialog .el-form-item__content {
+  margin-left: 127px !important;
+}
+
+.troila-dialog .maxlabel .el-form-item__label {
+  width: 150px !important;
+}
+
+.troila-dialog .maxlabel .el-form-item__content {
+  margin-left: 150px !important;
+}
+
+.troila-dialog .el-dialog__body .troila-form.maxlabel .el-form-item .el-input,
+.troila-dialog .el-dialog__body .troila-form.maxlabel .el-form-item .el-textarea,
+.troila-dialog .el-dialog__body .troila-form.maxlabel .el-form-item .newTree {
+  width: 360px;
+}
+
+.troila-dialog .el-button {
+  width: 80px;
+  height: 32px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.troila-dialog .el-dialog__body .troila-form .el-form-item .el-input,
+.troila-dialog .el-dialog__body .troila-form .el-form-item .el-textarea,
+.troila-dialog .el-dialog__body .troila-form .el-form-item .newTree {
+  /* width: 470px; */
+  width: 388px;
+}
+
+.troila-dialog .el-form-item__error {
+  left: unset;
+  right: 5px;
+}
+
+/* el-form */
+
+.troila-form {
+  font-size: 0;
+  text-align: left;
+  padding: 16px 0;
+}
+
+.troila-form .width37 {
+  width: 37%;
+}
+
+.troila-form .el-form-item__error {
+  left: unset;
+  right: 0;
+}
+
+.troila-form .el-radio-group+.el-form-item__error {
+  left: 100%;
+  right: unset;
+  white-space: nowrap;
+  margin-left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+
+.troila-form .el-input,
+.troila-form .el-textarea {
+  width: 300px;
+}
+
+.troila-form .el-textarea .el-input__count {
+  line-height: 17px;
+  height: 24px;
+  bottom: 1px;
+}
+
+.troila-form .el-form-item__label {
+  line-height: 32px;
+  padding: 0 16px 0 0;
+}
+
+.troila-form .el-form-item__label::after {
+  content: " ";
+  /* margin-right: -6px; */
+}
+
+.troila-form .el-input__suffix {
+  line-height: 32px;
+}
+
+.troila-form .el-input__icon {
+  line-height: 32px;
+  height: 32px;
+}
+
+.troila-form .el-input__prefix {
+  line-height: 32px;
+}
+
+.troila-form .el-form-item__content {
+  line-height: 32px;
+}
+
+.troila-form .el-col-2 {
+  text-align: center;
+  line-height: 32px;
+}
+
+.troila-form .el-form-item__label {
+  /* padding: 0 12px 0 0; */
+  padding: 0 12px 0 0;
+}
+
+.troila-form .el-input__inner {
+  vertical-align: top;
+  height: 32px;
+  line-height: 30px;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+.troila-form .el-form-item {
+  /* margin-bottom: 20px; */
+  margin-bottom: 0px;
+  padding: 10px 0;
+  display: inline-block;
+  padding-left: 100px;
+}
+
+.troila-form .el-col-11 {
+  margin-bottom: -20px;
+}
+
+.troila-form .el-input--prefix .el-input__inner {
+  padding-left: 30px;
+}
+
+.troila-form .el-input--suffix .el-input__inner {
+  padding-right: 30px;
+}
+
+.troila-form .el-textarea__inner {
+  resize: none;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.troila-form .detail {
+  display: flex;
+  line-height: 32px;
+}
+
+.troila-form .detail .el-input__inner {
+  border-radius: 3px 0 0 3px;
+}
+
+.troila-form .detail .el-input .el-input__inner::after {
+  content: "查询";
+}
+
+.troila-form .detail .find {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 15%;
+  height: 32px;
+  border-radius: 0 3px 3px 0;
+}
+
+.troila-form .el-button {
+  width: 80px;
+  height: 32px;
+  line-height: 30px;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+  /* margin-right: 18px; */
+  margin-right: 38px;
+}
+
+.troila-form .el-button.el-button--text {
+  background: none;
+  width: auto;
+  line-height: 1;
+  height: auto;
+  border: 0;
+  padding: 4px 8px;
+  opacity: 1;
+  transition: all 0.15s ease;
+}
+
+.troila-form .el-button.el-button--text:hover {
+  opacity: 0.8;
+}
+
+.table-box-title .troila-form .el-button {
+  margin-right: 18px;
+}
+
+.table-box-title .troila-form .el-button.long-btn {
+  padding: 0;
+}
+
+.troila-form .el-button.is-disabled {
+  opacity: 0.6 !important;
+  background-color: #3c71fd;
+  border-color: #3c71fd;
+}
+
+.table-box-title .troila-form>span {
+  margin-right: 18px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.table-box-title .troila-form>span>.el-button:last-child {
+  margin-right: 0px;
+}
+
+.troila-table .el-button {
+  margin-right: 16px;
+}
+
+.troila-form .el-button:last-child,
+.troila-table .el-button:last-child {
+  margin-left: 0;
+}
+
+.troila-form .el-button+.el-button,
+.troila-table .el-button+.el-button {
+  /* margin-left: 18px; */
+  margin-left: 0;
+}
+
+.troila-form .el-date-editor .el-range-separator {
+  line-height: 30px;
+}
+
+.troila-form-large {
+  padding: 34px 150px 34px 0;
+}
+
+/* .troila-form .form-box .el-form-item {
+  display: block;
+} */
+
+.troila-form.troila-form-large .el-input__inner,
+.troila-form.troila-form-large .el-textarea__inner {
+  border-radius: 6px;
+}
+
+.troila-form.troila-form-large .el-input__inner {
+  height: 40px;
+}
+
+.troila-form.troila-form-large .el-form-item__label {
+  line-height: 40px;
+}
+
+.troila-form.troila-form-large .el-input__suffix {
+  line-height: 40px;
+}
+
+/* button-group */
+
+.troila-group {
+  text-align: right;
+  padding: 20px 0 10px;
+}
+
+.troila-group i {
+  font-size: 16px;
+}
+
+.troila-group .el-button {
+  padding: 7px 12px;
+}
+
+.troila-group .el-button-group>.el-dropdown>.el-button .el-icon--right {
+  font-size: 12px;
+  vertical-align: top;
+  line-height: 16px;
+  margin-left: 0;
+}
+
+/* el-pagination */
+
+.troila-page.el-pagination__total {
+  margin-left: 12px;
+}
+
+.troila-page .el-pager li {
+  border: 1px solid #e2e2e2;
+  min-width: 40px;
+  margin-right: -1px;
+  line-height: 30px;
+  height: 30px;
+}
+
+.troila-page.el-pagination .btn-next,
+.troila-page.el-pagination .btn-prev {
+  padding: 0 13px;
+  border: 1px solid #e2e2e2;
+  margin-right: -1px;
+  min-width: 38px;
+}
+
+.troila-page.el-pagination .btn-next {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.troila-page.el-pagination .btn-prev {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.troila-page.el-pagination button,
+.troila-page.el-pagination span:not([class*="suffix"]) {
+  line-height: 30px;
+  height: 30px;
+}
+
+.troila-page .el-pagination__total {
+  margin-left: 20px;
+}
+
+/* troila-table */
+
+.troila-table {
+  margin-bottom: 34px;
+}
+
+.troila-table div.cell .button {
+  margin-right: 16px;
+}
+
+.troila-table div.cell .button:nth-last-child(1) {
+  margin-right: 0;
+}
+
+/* .troila-table th .el-checkbox::after {
+  content: "";
+  padding-left: 8px;
+} */
+
+.troila-table.el-table th {
+  padding: 4px 0;
+  height: 42px;
+}
+
+.troila-table .el-table-column--selection .cell {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.troila-table td {
+  padding: 5px 0;
+}
+
+.troila-table.plain.el-table th {
+  background-color: transparent !important;
+  color: #999999 !important;
+  border-bottom-color: #ebeef5 !important;
+}
+
+.troila-table.plain thead tr th {
+  border-top: 0;
+}
+
+.troila-table.plain.el-table .color-row {
+  background-color: #fff;
+}
+
+.troila-table.plain.el-table .color-row {
+  background-color: #fff;
+}
+
+.troila-table.plain td,
+.troila-table.plain th,
+.el-table__body-wrapper .troila-table.plain.is-scrolling-left~.el-table__fixed {
+  border-right: 1px solid #ebeef5;
+}
+
+.troila-table.plain {
+  border-top: 1px solid #ebeef5;
+  border-left: 1px solid #ebeef5;
+}
+
+.troila-table .cell {
+  line-height: 24px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* .troila-table .el-table__body-wrapper .cell {
+  line-height: 25px;
+} */
+
+.troila-table.el-table th>.cell {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.troila-table td button>span,
+.troila-table td button>span>svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.troila-table.el-table .caret-wrapper {
+  height: 28px;
+  vertical-align: top;
+}
+
+.troila-table.el-table .sort-caret.ascending {
+  top: 3px;
+}
+
+.troila-table.el-table .sort-caret.descending {
+  bottom: 3px;
+}
+
+.troila-table button {
+  padding: 0;
+  vertical-align: middle;
+}
+
+.troila-table-tooltip {
+  transform: translateY(8px);
+}
+
+.troila-table.el-table--border,
+.troila-table.el-table--group {
+  border: none;
+}
+
+/* el-table滚动条样式修改为统一样式 */
+
+/* .troila-transfer .el-transfer-panel__list.is-filterable::-webkit-scrollbar,
+.el-table__body-wrapper::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+  z-index: 9999;
+}
+
+.troila-transfer
+  .el-transfer-panel__list.is-filterable::-webkit-scrollbar-thumb,
+.el-table__body-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 5px;
+} */
+
+/* .troila-table .el-table__fixed,
+.troila-table .el-table__fixed-right {
+  height: calc(100% - 8px) !important;
+} */
+
+/* popper */
+
+.troila-btnGroup-popper .el-dropdown-menu__item {
+  padding: 0 30px;
+}
+
+.troila-btnGroup-popper,
+.troila-btnGroup-popper .el-scrollbar__wrap {
+  max-height: 360px;
+}
+
+.troila-popper .troila-choose {
+  margin-left: -17px;
+  font-size: 12px;
+}
+
+/* el-transfer */
+
+.troila-transfer {
+  text-align: center;
+  height: 450px;
+}
+
+.troila-transfer .el-transfer-panel {
+  text-align: left;
+  height: 100%;
+  width: 250px;
+}
+
+.troila-transfer .el-input__prefix {
+  right: 5px;
+  left: unset;
+}
+
+.troila-transfer .el-input__icon {
+  line-height: 33px;
+  height: 32px;
+  margin-left: 0px;
+}
+
+.troila-transfer .el-transfer-panel__filter .el-input__inner {
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.troila-dialog .troila-transfer .el-button {
+  border-radius: 4px;
+  width: 32px;
+}
+
+.troila-dialog .troila-transfer .el-input {
+  width: calc(100% - 30px);
+}
+
+/* .troila-transfer
+  .el-checkbox__input.is-indeterminate
+  .el-checkbox__inner::before {
+  background-color: #4d6ee8;
+} */
+
+.troila-transfer .el-transfer-panel .el-checkbox__inner::after {
+  /* border-color: #4d6ee8; */
+  top: 2px;
+}
+
+/* .el-table td {
+  border-bottom: 1px s #eee;
+}
+.el-table .el-table__row:last-child td {
+  border-bottom: none;
+} */
+
+.el-transfer-panel__list.is-filterable {
+  height: 345px;
+}
+
+.header-popper {
+  /* margin-top: 4px !important; */
+  min-width: auto;
+  padding: 0 14px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.colorBox .popper__arrow {
+  left: 50% !important;
+  margin-left: -6px;
+}
+
+.topHeaderBox {
+  margin-left: 32px;
+}
+
+/* el-tabs */
+
+.this-tabs .el-tabs__active-bar {
+  height: 3px;
+}
+
+.this-tabs .el-tabs__nav-wrap::after {
+  background-color: #e0e0e0;
+  height: 1px;
+  bottom: 1px;
+}
+
+.this-tabs .el-tabs__item>span {
+  padding: 0 12px 0 11px;
+}
+
+.this-tabs .el-tabs__item,
+.this-tabs .el-tabs__item svg {
+  transition: all 0.15s;
+}
+
+.this-tabs .el-tabs__item {
+  height: 36px;
+  line-height: 36px;
+}
+
+.el-tabs__item {
+  padding: 0 14px;
+}
+
+.this-tabs .el-tabs__item svg {
+  vertical-align: top;
+  margin: 10px 4px 0 0;
+}
+
+.troila-form .el-input__inner.roleTree {
+  height: 300px !important;
+  width: 360px;
+  padding: 5px 0;
+}
+
+.troila-table .el-checkbox__inner {
+  width: 16px;
+  height: 16px;
+}
+
+.troila-table .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+  top: 6px;
+}
+
+.troila-table .el-checkbox__inner::after {
+  left: 5px;
+  top: 2px;
+}
+
+.troila-table .el-checkbox__input:not(.is-disabled).is-checked .el-checkbox__inner,
+.troila-table .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #5684fe;
+  border-color: #5684fe;
+  color: #fff;
+}
+
+.approval-detail .el-button--primary {
+  width: 80px;
+  height: 32px;
+  line-height: 30px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+  background-color: #5684fe;
+  border-color: #5684fe;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.troila-dialog .dialog-footer .el-button:only-child {
+  width: 120px;
+}
+
+.el-button .el-loading-mask {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+}
+.el-button  .el-loading-mask .el-loading-spinner  {
+  top: 50%;
+  left: 25%;
+  width: 60%;
+}
+.el-button .el-loading-mask .el-loading-spinner .circular {
+  height: 26px;
+  width: 30px;
+}

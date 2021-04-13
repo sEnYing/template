@@ -1,0 +1,19 @@
+import layOut from '@/pages/layOut.vue'
+
+const reception =
+{
+path: '/{{fileName}}',
+name: '{{fileName}}Base',
+component: layOut,
+children: [
+{
+path: "/{{fileName}}",
+component: () => import("@/pages/{{filePath}}/{{fileName}}.vue"),
+name: "{{fileName}}",
+meta: {
+title: "{{routerTitle}}"
+},
+}
+]
+}
+export default reception;

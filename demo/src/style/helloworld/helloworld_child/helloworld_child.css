@@ -1,0 +1,29 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main .nameBox {
+  flex: 65%;
+}
+.main .btnBox {
+  flex: 10%;
+}
+.main .add {
+  flex: 20%;
+  text-align: right;
+  margin-right: 40px;
+}
+.main .date {
+  margin: 0 25px 0 35px;
+  font-size: 14px;
+}
+.main .name {
+  margin: 0 25px 0 35px;
+  font-size: 14px;
+}
+.main .el-input {
+  width: 250px;
+}

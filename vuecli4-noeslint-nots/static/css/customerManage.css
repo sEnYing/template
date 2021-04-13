@@ -1,0 +1,1101 @@
+.customerManage_messageBox {
+  height: 180px;
+}
+.customerManage_messageBox .el-message-box__content {
+  height: 50px;
+  font-size: 14px;
+}
+.customerManage_messageBox
+  .el-message-box__content
+  .icon-gantanhao-sanjiaokuang {
+  font-size: 30px !important;
+  color: #f14040;
+  padding-left: 26px;
+}
+.customerManage_messageBox .el-message-box__content .el-message-box__message {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 70px;
+}
+.customerManage_messageBox .el-message-box__btns {
+  text-align: center;
+  padding-top: 20px;
+}
+.customerManage_messageBox .el-message-box__btns .el-button {
+  width: 80px;
+  height: 30px;
+  line-height: 1.5;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #5b8cff;
+  color: #5b8cff;
+  padding: 0;
+}
+.customerManage_messageBox .el-message-box__btns .el-button.el-button--primary {
+  background-color: #5b8cff;
+  border-color: #5b8cff;
+  color: #fff;
+}
+.v-modal {
+  background-color: rgba(246, 246, 246, 0.55);
+}
+.el-dialog {
+  margin-top: 0 !important;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 9998;
+}
+.customerManage_transfers_dialog .el-dialog__header,
+.customerManage_share_dialog .el-dialog__header,
+.myApply_edit_dialog .el-dialog__header,
+.myApply_check_dialog .el-dialog__header,
+.myApproval_check_dialog .el-dialog__header,
+.approval_pass_dialog .el-dialog__header,
+.approval_nopass_dialog .el-dialog__header,
+.customerManage_admin_dialog .el-dialog__header {
+  height: 44px;
+  line-height: 46px;
+  background: rgba(246, 249, 254, 1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0 20px;
+}
+.customerManage_transfers_dialog .el-dialog__header .el-dialog__title,
+.customerManage_share_dialog .el-dialog__header .el-dialog__title,
+.myApply_edit_dialog .el-dialog__header .dialog_header,
+.myApply_check_dialog .el-dialog__header .el-dialog__title,
+.myApproval_check_dialog .el-dialog__header .dialog_header,
+.approval_pass_dialog .el-dialog__header .el-dialog__title,
+.approval_nopass_dialog .el-dialog__header .el-dialog__title,
+.customerManage_admin_dialog .el-dialog__header .el-dialog__title {
+  font-size: 16px;
+  font-family: 'Microsoft YaHei';
+  font-weight: 400;
+  color: #333;
+}
+
+.customerManage_transfers_dialog .el-dialog__header .el-dialog__headerbtn,
+.customerManage_share_dialog .el-dialog__header .el-dialog__headerbtn,
+.myApply_edit_dialog .el-dialog__header .el-dialog__headerbtn,
+.myApply_check_dialog .el-dialog__header .el-dialog__headerbtn,
+.myApproval_check_dialog .el-dialog__header .el-dialog__headerbtn,
+.approval_pass_dialog .el-dialog__header .el-dialog__headerbtn,
+.approval_nopass_dialog .el-dialog__header .el-dialog__headerbtn,
+.customerManage_admin_dialog .el-dialog__header .el-dialog__headerbtn {
+  top: 0;
+  font-size: 25px;
+  line-height: 50px;
+}
+.customerManage_transfers_dialog .el-dialog__body,
+.customerManage_share_dialog .el-dialog__body,
+.customerManage_admin_dialog .el-dialog__body,
+.myApply_edit_dialog .el-dialog__body {
+  padding: 0 30px;
+}
+.customerManage_transfers_dialog .el-dialog__body .name,
+.customerManage_transfers_dialog .el-dialog__body .transfer,
+.customerManage_transfers_dialog .el-dialog__body .tel,
+.customerManage_transfers_dialog .el-dialog__body .project,
+.customerManage_share_dialog .el-dialog__body .name,
+.customerManage_share_dialog .el-dialog__body .project,
+.customerManage_share_dialog .el-dialog__body .tel,
+.customerManage_share_dialog .el-dialog__body .share,
+.customerManage_share_dialog .el-dialog__body .discription,
+.customerManage_transfers_dialog .el-dialog__body .discription,
+.myApply_edit_dialog .el-dialog__body .name,
+.myApply_edit_dialog .el-dialog__body .project,
+.myApply_edit_dialog .el-dialog__body .contact,
+.myApply_edit_dialog .el-dialog__body .second,
+.myApply_edit_dialog .el-dialog__body .single,
+.myApply_edit_dialog .el-dialog__body .discription {
+  display: flex;
+  margin-top: 10px;
+}
+.customerManage_share_dialog .el-dialog__body .project > div:nth-child(2) div,
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .project
+  > div:nth-child(2)
+  div,
+.myApply_edit_dialog .el-dialog__body .project > div:nth-child(2) div {
+  margin-bottom: 10px;
+}
+.customerManage_share_dialog
+  .el-dialog__body
+  .project
+  > div:nth-child(2)
+  div:last-child,
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .project
+  > div:nth-child(2)
+  div:last-child,
+.myApply_edit_dialog
+  .el-dialog__body
+  .project
+  > div:nth-child(2)
+  div:last-child {
+  margin-bottom: 0px;
+}
+.customerManage_share_dialog .el-dialog__body .tel > div:nth-child(2),
+.customerManage_transfers_dialog .el-dialog__body .tel > div:nth-child(2),
+.approval_pass_dialog .el-dialog__body .message > div:nth-child(2),
+.approval_pass_dialog .el-dialog__body .message > div:nth-child(1) {
+  display: flex;
+}
+.customerManage_share_dialog .el-dialog__body .tel > div:nth-child(2) div,
+.customerManage_transfers_dialog .el-dialog__body .tel > div:nth-child(2) div {
+  flex: 1;
+}
+.customerManage_share_dialog .el-dialog__body .share {
+  margin-bottom: 30px;
+}
+.customerManage_transfers_dialog .el-dialog__body .name > div:nth-child(1),
+.customerManage_transfers_dialog .el-dialog__body .transfer > div:nth-child(1),
+.customerManage_transfers_dialog .el-dialog__body .project > div:nth-child(1),
+.customerManage_transfers_dialog .el-dialog__body .tel > div:nth-child(1),
+.customerManage_share_dialog .el-dialog__body .name > div:nth-child(1),
+.customerManage_share_dialog .el-dialog__body .project > div:nth-child(1),
+.customerManage_share_dialog .el-dialog__body .tel > div:nth-child(1),
+.customerManage_share_dialog .el-dialog__body .share > div:nth-child(1),
+.customerManage_share_dialog .el-dialog__body .discription > div:nth-child(1),
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .discription
+  > div:nth-child(1),
+.myApply_edit_dialog .el-dialog__body .name > div:nth-child(1),
+.myApply_edit_dialog .el-dialog__body .project > div:nth-child(1),
+.myApply_edit_dialog .el-dialog__body .contact > div:nth-child(1),
+.myApply_edit_dialog .el-dialog__body .second > div:nth-child(1),
+.myApply_edit_dialog .el-dialog__body .single > div:nth-child(1),
+.myApply_edit_dialog .el-dialog__body .discription > div:nth-child(1),
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  > div:nth-child(2)
+  > div:nth-child(1),
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  > div:nth-child(1)
+  > div:nth-child(1) {
+  flex: 18%;
+  text-align: right;
+  line-height: 20px;
+}
+.customerManage_transfers_dialog .el-dialog__body .name > div:nth-child(2),
+.customerManage_transfers_dialog .el-dialog__body .transfer > div:nth-child(2),
+.customerManage_transfers_dialog .el-dialog__body .project > div:nth-child(2),
+.customerManage_transfers_dialog .el-dialog__body .tel > div:nth-child(2),
+.customerManage_share_dialog .el-dialog__body .name > div:nth-child(2),
+.customerManage_share_dialog .el-dialog__body .project > div:nth-child(2),
+.customerManage_share_dialog .el-dialog__body .tel > div:nth-child(2),
+.customerManage_share_dialog .el-dialog__body .share > div:nth-child(2),
+.customerManage_share_dialog .el-dialog__body .discription > div:nth-child(2),
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .discription
+  > div:nth-child(2),
+.myApply_edit_dialog .el-dialog__body .name > div:nth-child(2),
+.myApply_edit_dialog .el-dialog__body .project > div:nth-child(2),
+.myApply_edit_dialog .el-dialog__body .contact > div:nth-child(2),
+.myApply_edit_dialog .el-dialog__body .second > div:nth-child(2),
+.myApply_edit_dialog .el-dialog__body .single > div:nth-child(2),
+.myApply_edit_dialog .el-dialog__body .discription > div:nth-child(2),
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  > div:nth-child(2)
+  > div:nth-child(2),
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  > div:nth-child(1)
+  > div:nth-child(2) {
+  flex: 82%;
+  text-align: left;
+  line-height: 20px;
+}
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-input
+  .el-input__suffix
+  .el-input__suffix-inner
+  .icon-fangdajing,
+.customerManage_share_dialog
+  .el-dialog__body
+  .tree
+  .el-input
+  .el-input__suffix
+  .el-input__suffix-inner
+  .icon-fangdajing,
+.myApply_edit_dialog
+  .el-dialog__body
+  .single
+  div:nth-child(2)
+  .el-input
+  .el-input__suffix
+  .el-input__suffix-inner
+  .icon-fangdajing,
+.myApply_edit_dialog
+  .el-dialog__body
+  .tree
+  .el-input
+  .el-input__suffix
+  .el-input__suffix-inner
+  .icon-fangdajing {
+  color: black;
+  font-size: 22px;
+}
+.customerManage_share_dialog .el-dialog__body .tree,
+.customerManage_share_dialog .el-dialog__body .discription,
+.customerManage_transfers_dialog .el-dialog__body .discription,
+.myApply_edit_dialog .el-dialog__body .discription,
+.myApply_edit_dialog .el-dialog__body .tree {
+  margin-right: 60px;
+}
+.customerManage_transfers_dialog .el-dialog__body .transfer > div:nth-child(1),
+.myApply_edit_dialog .el-dialog__body .single > div:nth-child(1) {
+  position: absolute;
+  left: 65px;
+}
+.customerManage_transfers_dialog .el-dialog__body .transfer div:nth-child(2),
+.myApply_edit_dialog .el-dialog__body .single div:nth-child(2) {
+  flex: 100%;
+  margin: 0 auto;
+}
+.customerManage_share_dialog .el-dialog__body .tree,
+.myApply_edit_dialog .el-dialog__body .tree,
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-input,
+.myApply_edit_dialog .el-dialog__body .single div:nth-child(2) .el-input {
+  width: 270px;
+  margin: 0 auto;
+}
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-tree,
+.myApply_edit_dialog .el-dialog__body .single div:nth-child(2) .el-tree {
+  width: 270px;
+}
+.customerManage_share_dialog .el-dialog__body .tree .el-input,
+.myApply_edit_dialog .el-dialog__body .tree .el-input,
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-input,
+.myApply_edit_dialog .el-dialog__body .single div:nth-child(2) .el-input {
+  margin-bottom: 4px;
+  height: 30px;
+  display: block;
+}
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-tree,
+.myApply_edit_dialog .el-dialog__body .single div:nth-child(2) .el-tree,
+.customerManage_share_dialog .el-dialog__body .tree .el-tree,
+.myApply_edit_dialog .el-dialog__body .tree .el-tree {
+  height: 411px;
+  border: 1px solid #dcdfe6;
+  overflow-y: auto;
+  font-size: 14px;
+}
+.customerManage_share_dialog .el-dialog__body .tree .el-tree,
+.myApply_edit_dialog .el-dialog__body .tree .el-tree {
+  margin-right: 0;
+}
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner,
+.customerManage_share_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner,
+.myApply_edit_dialog
+  .el-dialog__body
+  .single
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner,
+.myApply_edit_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner {
+  border: 1px solid #dcdfe6;
+  margin-right: 3px;
+}
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content:hover
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner,
+.customerManage_share_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content:hover
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner,
+.myApply_edit_dialog
+  .el-dialog__body
+  .single
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content:hover
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner,
+.myApply_edit_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content:hover
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner {
+  border-color: #409eff;
+}
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner.active,
+.customerManage_share_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner.active,
+.myApply_edit_dialog
+  .el-dialog__body
+  .single
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner.active,
+.myApply_edit_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner.active {
+  background-color: #409eff;
+  border-color: #409eff;
+}
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner::before,
+.customerManage_share_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner::before,
+.myApply_edit_dialog
+  .el-dialog__body
+  .single
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner::before,
+.myApply_edit_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner::before {
+  opacity: 0;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46);
+  transition: opacity 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46);
+}
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner.active::before,
+.customerManage_share_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner.active::before,
+.myApply_edit_dialog
+  .el-dialog__body
+  .single
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner.active::before,
+.myApply_edit_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__content
+  .el-checkbox
+  .el-checkbox__input
+  .el-checkbox__inner.active::before {
+  opacity: 1;
+}
+
+.customerManage_transfers_dialog
+  .el-dialog__body
+  .transfer
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__children
+  .el-tree-node
+  .el-tree-node__children
+  .el-tree-node
+  .el-tree-node__content
+  .func,
+.myApply_edit_dialog
+  .el-dialog__body
+  .single
+  div:nth-child(2)
+  .el-tree
+  .el-tree-node
+  .el-tree-node__children
+  .el-tree-node
+  .el-tree-node__children
+  .el-tree-node
+  .el-tree-node__content
+  .func {
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+  position: relative;
+}
+.customerManage_share_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__children
+  .el-tree-node
+  .el-tree-node__children
+  .el-tree-node
+  .el-tree-node__content
+  .func,
+.myApply_edit_dialog
+  .el-dialog__body
+  .tree
+  .el-tree
+  .el-tree-node
+  .el-tree-node__children
+  .el-tree-node
+  .el-tree-node__children
+  .el-tree-node
+  .el-tree-node__content
+  .func {
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+}
+.customerManage_share_dialog
+  .el-dialog__body
+  .tree
+  .project_share_dialog
+  .el-tree-node
+  .el-tree-node__content,
+.myApply_edit_dialog
+  .el-dialog__body
+  .tree
+  .el-tree-node
+  .el-tree-node__content {
+  position: relative;
+}
+.customerManage_transfers_dialog .el-dialog__footer,
+.customerManage_share_dialog .el-dialog__footer,
+.customerManage_admin_dialog .el-dialog__footer,
+.myApply_edit_dialog .el-dialog__footer,
+.approval_nopass_dialog .el-dialog__footer,
+.myApply_check_dialog .el-dialog__footer,
+.myApproval_check_dialog .el-dialog__footer,
+.approvals_dialog .el-dialog__footer,
+.approval_pass_dialog .el-dialog__footer {
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+.customerManage_transfers_dialog .el-dialog__footer .el-button,
+.customerManage_share_dialog .dialog-footer .el-button,
+.customerManage_admin_dialog .el-dialog__footer .el-button,
+.myApply_check_dialog .el-dialog__footer .el-button,
+.myApply_edit_dialog .el-dialog__footer .el-button,
+.approval_nopass_dialog .el-dialog__footer .el-button,
+.myApply_check_dialog .el-dialog__footer .el-button,
+.myApproval_check_dialog .el-dialog__footer .el-button,
+.approvals_dialog .el-dialog__footer .el-button,
+.approval_pass_dialog .el-dialog__footer .el-button {
+  width: 80px;
+  height: 30px;
+  padding: 0;
+}
+.customerManage_admin_dialog .el-dialog__body {
+  margin-top: 15px;
+}
+.customerManage_admin_dialog .el-dialog__body > div .content,
+.approval_pass_dialog .el-dialog__body .message .content {
+  display: flex;
+  margin-top: 10px;
+}
+.customerManage_admin_dialog .el-dialog__body > div .content > div:nth-child(1),
+.approval_pass_dialog .el-dialog__body .message .content > div:nth-child(1) {
+  line-height: 2.5;
+  flex: 15%;
+}
+.customerManage_admin_dialog .el-dialog__body > div .content .content_right,
+.approval_pass_dialog .el-dialog__body .message .content .content_right {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 85%;
+}
+.customerManage_admin_dialog
+  .el-dialog__body
+  > div
+  .content
+  .content_right
+  > div,
+.approval_pass_dialog .el-dialog__body .message .content .content_right > div {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  line-height: 2.5;
+}
+
+.customerManage_admin_dialog
+  .el-dialog__body
+  > div
+  .content
+  .content_right
+  > div:last-child,
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  .content
+  .content_right
+  > div:last-child {
+  margin-right: 0；;
+}
+.customerManage_admin_dialog
+  .el-dialog__body
+  > div
+  .content
+  .content_right
+  > div
+  span:nth-child(1),
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  .content
+  .content_right
+  > div
+  span:nth-child(1) {
+  width: 105px;
+  text-align: right;
+}
+.customerManage_admin_dialog
+  .el-dialog__body
+  > div
+  .content
+  .content_right
+  > div
+  .el-input,
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  .content
+  .content_right
+  > div
+  .el-input {
+  width: 40px;
+  height: 27px;
+  margin: 0 10px;
+}
+
+.customerManage_admin_dialog
+  .el-dialog__body
+  > div
+  .content
+  .content_right
+  > div
+  .el-input
+  .el-input__inner,
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  .content
+  .content_right
+  > div
+  .el-input
+  .el-input__inner {
+  width: 46px;
+  height: 27px;
+  line-height: 27px;
+}
+
+.myApply_check_dialog .el-dialog__header .el-dialog__title,
+.myApproval_check_dialog .el-dialog__header .el-dialog__title,
+.myApply_edit_dialog .el-dialog__header .dialog_header h1 {
+  font-size: 16px;
+  font-family: 'Microsoft YaHei';
+  font-weight: 400;
+  color: #333;
+}
+.myApply_check_dialog .el-dialog__body,
+.myApproval_check_dialog .el-dialog__body {
+  padding: 15px 0;
+}
+.myApply_check_dialog .el-dialog__body .content_top,
+.myApply_check_dialog .el-dialog__body .content_bottom,
+.myApproval_check_dialog .el-dialog__body .content_top,
+.myApproval_check_dialog .el-dialog__body .content_bottom {
+  padding: 0 20px;
+}
+.myApply_check_dialog .el-dialog__body .content_top,
+.myApproval_check_dialog .el-dialog__body .content_top {
+  background-color: rgba(246, 249, 254, 1);
+}
+.myApply_check_dialog .el-dialog__body .content_top > div:nth-child(2),
+.myApply_check_dialog .el-dialog__body .content_top > div:nth-child(1),
+.myApproval_check_dialog .el-dialog__body .content_top > div:nth-child(1) {
+  display: flex;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.myApply_check_dialog .el-dialog__body .content_top > div:nth-child(1),
+.myApproval_check_dialog .el-dialog__body .content_top > div:nth-child(1) {
+  padding: 10px 0 15px;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(1)
+  > div:nth-child(1),
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(1)
+  > div:nth-child(1) {
+  flex: 25%;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(1)
+  > div:nth-child(2),
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(1)
+  > div:nth-child(2) {
+  flex: 30%;
+  margin-left: 20px;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(1)
+  > div:nth-child(3),
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(1)
+  > div:nth-child(3) {
+  flex: 45%;
+  margin-left: 15px;
+}
+.myApply_check_dialog .el-dialog__body .content_top > div:nth-child(2) {
+  flex-wrap: wrap;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(2)
+  > div:nth-child(1) {
+  flex: 100%;
+  margin-bottom: 10px;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(2)
+  > div:nth-child(2) {
+  flex: 100%;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_top
+  > div:nth-child(2)
+  > div:nth-child(2)
+  span:nth-child(2) {
+  color: #f14040;
+}
+.myApply_check_dialog .el-dialog__body .content_top > div:nth-child(3) {
+  margin-bottom: 8px;
+}
+.myApply_check_dialog .el-dialog__body .content_top > div:nth-child(4) {
+  width: 70%;
+  padding-bottom: 8px;
+}
+.myApply_check_dialog .el-dialog__body .content_bottom {
+  margin-top: 40px;
+}
+.myApply_check_dialog .el-dialog__body .content_bottom .customerMessage {
+  margin-bottom: 20px;
+}
+.myApply_check_dialog .el-dialog__body .content_bottom .projectMessage {
+  margin-bottom: 18px;
+}
+.myApply_check_dialog .el-dialog__body .content_bottom .projectMessage > div {
+  margin-top: 15px;
+  display: flex;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_bottom
+  .projectMessage
+  > div
+  > span {
+  flex: 20%;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_bottom
+  .projectMessage
+  > div
+  .allot {
+  flex: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_bottom
+  .projectMessage
+  > div
+  .allot
+  span {
+  flex: 34%;
+  margin-bottom: 5px;
+}
+.myApply_check_dialog .el-dialog__body .content_bottom .peopleMessage {
+  display: flex;
+  text-align: left;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_bottom
+  .peopleMessage
+  div:nth-child(1),
+.myApply_check_dialog
+  .el-dialog__body
+  .content_bottom
+  .peopleMessage
+  div:nth-child(2),
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  .peopleMessage
+  div
+  div:nth-child(1),
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  .peopleMessage
+  div
+  div:nth-child(2) {
+  flex: 40%;
+}
+.myApply_check_dialog
+  .el-dialog__body
+  .content_bottom
+  .peopleMessage
+  div:nth-child(3),
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  .peopleMessage
+  div
+  div:nth-child(3) {
+  flex: 20%;
+}
+.myApply_check_dialog .el-dialog__footer,
+.myApproval_check_dialog .el-dialog__footer,
+.approvals_dialog .el-dialog__footer {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.myApply_check_dialog .el-dialog__footer .el-button,
+.myApproval_check_dialog .el-dialog__footer .el-button,
+.approvals_dialog .el-dialog__footer .el-button {
+  background-color: #5b8cff;
+  color: #fff;
+}
+.myApply_check_dialog .el-dialog__footer .el-button,
+.myApproval_check_dialog .el-dialog__footer .el-button:nth-child(2),
+.approvals_dialog .el-dialog__footer .el-button:nth-child(2) {
+  background-color: #fff;
+  border: 1px solid #5b8cff;
+  color: #5b8cff;
+}
+.myApproval_check_dialog .el-dialog__body .content_top {
+  margin-bottom: 30px;
+}
+.myApproval_check_dialog .el-dialog__body .content_top > div:nth-child(2) {
+  margin-bottom: 20px;
+}
+/* .myApproval_check_dialog .el-dialog__body .content_top > div:nth-child(3) {
+  margin-bottom: 15px;
+} */
+.myApproval_check_dialog .el-dialog__body .content_top .project > div {
+  margin-bottom: 10px;
+}
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  .project
+  > div:nth-child(2) {
+  display: flex;
+}
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  .project
+  > div:nth-child(2)
+  > span {
+  flex: 20%;
+}
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  .project
+  > div:nth-child(2)
+  .allot {
+  flex: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  .project
+  > div:nth-child(2)
+  .allot
+  span {
+  flex: 34%;
+  margin-bottom: 5px;
+}
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_top
+  .project
+  > div:last-child {
+  padding-bottom: 10px;
+}
+.myApproval_check_dialog .el-dialog__body .content_top .peopleMessage div {
+  display: flex;
+  margin-bottom: 10px;
+}
+.myApproval_check_dialog .el-dialog__body .content_bottom {
+  display: flex;
+}
+.myApproval_check_dialog .el-dialog__body .content_bottom div:nth-child(1) {
+  flex: 10%;
+}
+.myApproval_check_dialog .el-dialog__body .content_bottom div:nth-child(1) h1 {
+  font-size: 16px;
+  font-weight: 900;
+  color: #333;
+}
+.myApproval_check_dialog .el-dialog__body .content_bottom div:nth-child(2) {
+  flex: 10%;
+}
+.myApproval_check_dialog
+  .el-dialog__body
+  .content_bottom
+  div:nth-child(2)
+  .el-radio-group
+  .el-radio {
+  margin-bottom: 10px;
+}
+.myApproval_check_dialog .el-dialog__body .content_bottom div:nth-child(3) {
+  flex: 80%;
+  -ms-flex: 55%;
+  padding-top: 20px;
+  padding-right: 80px;
+}
+.approvals_dialog .el-dialog__body {
+  display: flex;
+}
+.approvals_dialog .el-dialog__body div:nth-child(1) {
+  flex: 40%;
+  font-size: 18px;
+  color: #333;
+  margin-left: 15px;
+}
+.approvals_dialog .el-dialog__body div:nth-child(1) h1 {
+  font-weight: 800;
+}
+.approvals_dialog .el-dialog__body div:nth-child(2) {
+  flex: 60%;
+  margin-right: 60px;
+  text-align: left;
+}
+.approvals_dialog .el-dialog__body div:nth-child(2) .el-radio {
+  margin-bottom: 10px;
+}
+.approval_nopass_dialog .el-dialog__body {
+  padding: 30px 40px 30px 50px;
+}
+.approval_nopass_dialog .el-dialog__body div span {
+  display: inline-block;
+  margin-bottom: 15px;
+  transform: translate3d(0, 0, 0);
+}
+.approval_nopass_dialog .el-dialog__footer {
+  line-height: 1;
+  height: 80px;
+}
+.approval_pass_dialog .el-dialog__body .pass {
+  margin-bottom: 30px;
+}
+.approval_pass_dialog .el-dialog__body .pass > span {
+  font-size: 16px;
+  font-weight: 800;
+}
+.approval_pass_dialog .el-dialog__body .message > div:nth-child(1) {
+  margin-bottom: 10px;
+}
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  > div:nth-child(2)
+  > div:nth-child(1) {
+  padding-top: 4px;
+}
+.approval_pass_dialog .el-dialog__body .message > div:nth-child(2) .people {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  > div:nth-child(2)
+  .people
+  span {
+  vertical-align: middle;
+}
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  > div:nth-child(2)
+  .people
+  .el-input {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  vertical-align: middle;
+}
+.approval_pass_dialog
+  .el-dialog__body
+  .message
+  > div:nth-child(2)
+  .people
+  .el-input
+  .el-input__inner {
+  width: 100%;
+  height: 100%;
+}
+.el-dialog__body .el-tree {
+}
